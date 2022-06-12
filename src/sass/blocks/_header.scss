@@ -1,0 +1,73 @@
+.header {
+    position: relative; 
+
+    &__menu {
+        padding: 34px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: #fff;
+        &_flex {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            
+        }
+    }
+
+    &__logo {
+
+        font-weight: 700;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        text-decoration: none;
+        color: #171717;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            background-color: $main-color;
+            display: block;
+            width: 98%;
+            height: 5px;
+            opacity: 0.35;
+        }
+      
+
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none; 
+        margin: 0; 
+        padding:0;
+        
+    
+  
+    }
+
+    &__link {
+        padding-right: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+        &.chColor {
+            font-weight: 400;
+            font-size: 14px;
+            color: $main-color;
+
+        }
+
+        &.pl0 {
+            padding: 0;
+        }
+
+        
+    }
+
+
+}

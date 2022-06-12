@@ -1,0 +1,118 @@
+.cards {
+    .card__about {
+        width: 270px;
+
+        display: flex;
+        flex-direction: column;
+        
+        &_adap {
+            margin-top: 20px;
+            min-height: 360px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        &_img img{
+            width: 100%;
+        }
+
+        &_info{
+            margin-top: 20px;
+            text-align: center;
+
+        }
+        &_name {
+            font-weight: 700;
+            font-size: 16px;
+
+            color: #171717;
+        }
+
+        &_job {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 4px;
+            color: #B1B1B1;
+
+        }
+
+        &_descr {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            padding: 14px 20px;
+            color: #666666;
+        }
+
+        &_btn {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            background: none;
+            padding: 12px 78px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 11px;
+            width: 100%;
+            text-transform: uppercase;
+
+            color: #C9A96E;
+        }
+
+        @include mt70;
+
+        &_wrapper {
+            text-align: center;
+        }
+
+        &_headerText {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            padding-top: 15px;
+            text-transform: uppercase;
+
+            color: $main-color;
+
+        }
+
+        &_subheaderText {
+            font-weight: 400;
+            font-size: 18px;
+
+            text-align: center;
+
+
+            padding-top: 4px;   
+            padding-left: 10px ; 
+            padding-right: 10px ;
+            padding-bottom: 10px;
+            color: #171717;
+
+        }
+        &_descr {
+            padding-top: 10px;
+            color: #666; 
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            &_date {
+                padding-right: 20px;
+            }
+            &_author {
+                span {
+                    color: #b1b1b1;
+                }
+            }
+        }
+        @include card__about_feat;
+
+        .mt30 {
+            margin-top: 30px;
+        }
+
+    }
+
+
+
+}
